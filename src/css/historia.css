@@ -1,0 +1,108 @@
+body {
+    background-color: rgba(0, 0, 0, 0.26);
+    background-image: url(../imagens/corredor.webp);
+    height: 100vh;
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    margin-bottom: 200px;
+}
+.gamer-container {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid black;
+    width: 950px;
+    height: 600px;
+    background-image: url(../cenarios/saladeaula.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chat-personagem {
+    background-color: blue;
+}
+#dialog-box {
+    display: none; /* Inicialmente oculto */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow-y: auto;
+    width: 120px;
+    position: absolute;
+    bottom: 55%;
+    left: 370px;
+    padding: 10px;
+    text-align: center;
+}
+#personagem-imagem {
+    display: none; /* Inicialmente oculto */
+    margin-left: 150px;
+    width: 220px;
+}
+#choices {
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    width: 949px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    border-top: 2px solid #810707;
+    top: 80%;
+}
+button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(8, 8, 8, 0.801);
+    color: white;
+    border: 0.5px solid rgb(85, 5, 5);
+}
+
+.audio-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.audio-icon {
+    position: relative;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.audio-icon:hover {
+    color: #007bff;
+}
+
+/* Mantém o controle de volume fixo ao lado do ícone */
+.volume-control {
+    position: absolute;
+    top: 0;
+    left: 60px; /* Ajusta a posição para ficar ao lado do ícone */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    display: none; /* Inicialmente escondido */
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/csslogin.css">               
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/imagens/favicon.icon.webp">
+
+    <title>Sweet home</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="./src/imagens/logobranca.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#inicio">página inicial</a>
+                    </li>
+
+                    <li>
+                        <a href="#containerperso">personagens</a>
+                    </li>
+
+                    <li>
+                        <a href="#sweet">sweet home</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="login">
+                <a href="#">Entrar</a>
+            </div>
+
+            <div id="login-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Login</h1>
+                    <form id="login-form">
+                        <input type="text" placeholder="Email ou Nome de Usuário" required>
+                        <input type="password" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <p class="link" id="to-signup">Não tenho cadastro</p>
+                </div>
+            </div>
+            <div id="signup-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Cadastro</h1>
+                    <form id="signup-form">
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Nome de Usuário" required>
+                        <input type="password" placeholder="Senha" required>
+                        <input type="password" placeholder="Confirmação de Senha" required>
+                        <label>
+                            <input type="checkbox" required> Tenho mais de 12 anos
+                        </label>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                    <p class="link" id="to-login">Já tenho cadastro</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="selecao">
+        <div class="logo">
+            <img src="./src/imagens/logopreta.png" alt="">
+        </div>
+
+        <section id="inicio">
+            <div class="container">
+
+                <div id="desc">
+                    <p>certifique-se que todas as portas estaram fechadas, mostros podem entrar</p>
+                </div>
+               
+                <div id="trailer">
+                    <img src="./src/imagens/trailer.jpeg" alt="Trailer" onclick="abrirModal()">
+                </div>
+            
+                <!-- Modal -->
+                <div id="modal" class="modal">
+                    <div class="modal-video" id="modalVideo">
+                        <button class="close" onclick="fecharModal()">×</button>
+                        <iframe id="video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+
+    <section id="containerperso">
+        <div class="conteudo">
+
+    <div class="container-sele-desc">
+        <section class="selecao-de-personagens">
+           
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ivan" data-name="Ivan" data-description="Ivan pode parecer um garoto que não liga para nada, mas isso é só fachada. Ele guarda ressentimentos, evita demonstrar sentimentos e prefere agir sozinho. Gosta de provocar e testar os outros, mas quando as coisas ficam sérias, ele se mostra alguém firme e confiável, mesmo que nunca admita isso em voz alta.">
+                    <img src="./src/imagens/ivan.jpeg" alt="Personagem Ivan">
+                </li>
+                <li class="personagem" id="kiwan" data-name="Kiwan" data-description="
+                Kiwan é um jovem sério e reservado, alguém que prefere se concentrar nos estudos e evitar interações desnecessárias. Como representante de turma, ele assume suas responsabilidades com rigor e tem um forte senso de dever, o que o torna respeitado entre os professores, mas um tanto distante dos colegas.">
+                    <img src="./src/imagens/kiwan.jpeg" alt="Personagem Kiwan">
+                </li>
+                <li class="personagem" id="viktor" data-name="Viktor" data-description="Viktor é o tipo de pessoa que sempre esteve no topo. Filho de um dos sócios da escola e herdeiro da maior empresa do país, ele cresceu cercado de privilégios e poder. Com uma postura confiante e um sorriso controlado, ele é carismático para quem está no seu nível social, mas não perde tempo com aqueles que considera inferiores.">
+                    <img src="./src/imagens/Viktot.jpeg" alt="Personagem Viktor">
+                </li>
+                <li class="personagem" id="nasus" data-name="Nasus" data-description="Nasus é um daqueles alunos que facilmente passam despercebidos. Sempre quieto, com os fones de ouvido e a mente imersa em videogames, ele raramente se envolve nas conversas da turma. Não que ele se importe para ele, o mundo real nunca foi tão interessante quanto os mundos digitais.">
+                    <img src="./src/imagens/nasus.jpeg" alt="Personagem Nasus">
+                </li>
+                <li class="personagem" id="sion" data-name="Sion" data-description="
+                Sion é o filho do diretor da escola e, para a maioria das pessoas, ele é o exemplo perfeito de um aluno exemplar. Inteligente, educado e sempre com um sorriso no rosto. Mas por trás dessa fachada impecável, esconde-se um manipulador astuto, que enxerga os outros como meras peças em seu jogo pessoal.">
+                    <img src="./src/imagens/sion.jpeg" alt="Personagem Sion">
+                </li>
+            </ul>
+        </section>
+
+        <div class="informacoes-personagem">
+            <h2 class="nome-personagem" id="nome-personagem">Ivan</h2>
+            <p class="descricao-personagem" id="descricao-personagem">
+                Ivan pode parecer um garoto que não liga para nada, mas isso é só fachada. Ele guarda ressentimentos, evita demonstrar sentimentos e prefere agir sozinho. Gosta de provocar e testar os outros, mas quando as coisas ficam sérias, ele se mostra alguém firme e confiável, mesmo que nunca admita isso em voz alta.
+            </p>
+        </div>
+    </div>
+
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/ivan.png" alt="Personagem Selecionado">
+        </section>
+    </div>
+    </section>
+
+    <section id="sweet">
+        <div class="containerres">
+            <div class="imgresumo">
+                <img src="./src/imagens/logobranca.png" alt="">
+            </div>
+            <div class="descresumo">
+                <p>"Em uma escola de elite, um grupo de alunos se vê repentinamente preso dentro do campus, sem nenhum sinal de saída. Quando finalmente conseguem abrir os portões, descobrem que a cidade foi destruída e que o mundo lá fora está irreconhecível. 
+                </p>
+
+                <p>"Com todos os alunos reunidos na escola, a protagonista, uma jovem discreta e sem muita conexão com os outros, encontra-se cercada por antigos conhecidos e novos aliados que, juntos, tentam entender o que aconteceu e como sair desse pesadelo. No entanto, conforme os dias passam, segredos começam a ser revelados, e relações complexas se formam, incluindo antigos ressentimentos e sentimentos esquecidos."</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy;2025| Sweet Home</strong></p>
+              </div>
+          
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Empresa</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Compatibilidade</a></li>
+              <li><a href="#">Creditos</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-about">
+            <p>Um jogo online por <strong>Meow</strong></p>
+          </div>
+      </footer>
+     
+    <script src="./src/javascript/index.js"></script>
+    <script src="./src/javascript/login.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(56, 56, 56);
+    background-image: url(../imagens/corredor.webp);
+    background-attachment: fixed;
+    height: 100vh;
+}
+.personagensContainer {
+    display: flex;
+    background-color: black;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px dashed rgb(104, 2, 2);
+    background-color: black;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    color: #ff4a4a;
+    text-shadow: 2px 2px 10px rgba(255, 74, 74, 0.7);
+    font-family: "Lato", sans-serif;
+}
+
+.container-personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.personagensBox {
+    background: #141414;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(255, 74, 74, 0.3);
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.personagensBox:hover {
+    transform: scale(1.05);
+}
+
+.imagemPersonagemPeq {
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemPersonagemPeq img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.descricaoPersonagem {
+    width: 650px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricaoPersonagem h2 {
+    color: #ff4a4a;
+    font-size: 1.7rem;
+    padding-top: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.descricaoPersonagem h3 {
+    color: rgb(92, 92, 92);
+    font-family: "Lato", sans-serif;
+}
+
+.descricaoPersonagem p {
+    color: rgb(92, 92, 92);
+    padding-top: 5px;
+    font-family: "Lato", sans-serif;
+}
+
+.informacoesPersonagem {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    height: 200px;
+    background: #222;
+    margin: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.informacoesPersonagem p {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    margin: 5px 0;
+}
+
+.container-personagens .titulo {
+    margin-bottom: 40px;
+    margin: 5px 0;
+}
+
+.informacoesPersonagem strong {
+    color: #ff4a4a;
+}
+
+
+.box {
+    display: none; /* Oculta as caixas por padrão */
+    width: 90%;
+}
+
+.box.active {
+    display: block; /* Torna as caixas visíveis quando a classe active for aplicada */
+}
+
+
+.mudapersonagem {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.mudapersonagem h1 {
+    font-family: "Inconsolada", sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: brown;
+    color: #fff;
+}
+
+.mudapersonagem h1:hover {
+    transform: scale(1.05); 
+    transition: all 0.3s ease; /* Suaviza a transição de todos os efeitos */
+}
+
+.mudapersonagem h1.selected {
+    background-color: #fff;
+    color: brown;
+    box-shadow: 5px 2px 6px 3px rgba(165, 42, 42, 0.719);
+}

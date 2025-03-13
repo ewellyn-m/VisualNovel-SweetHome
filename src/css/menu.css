@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    background-color: black;
+    height: 50px;
+    align-items: center;
+    gap: 350px;
+}
+
+#logo img {
+    width: 120px;
+    height: auto;
+}
+
+ ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+ ul li a {
+    color: #fff; /* Ajuste a cor do texto */
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s; /* Animação suave para hover */
+}
+
+ ul li a:hover {
+    color: #5a0808; /* Cor ao passar o mouse */
+}
+
+
+/* Estilos para o footer */
+footer {
+    margin-top: 170px ;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Container geral do footer */
+  .footer-container {
+    text-align: center;
+  }
+  
+  /* Alinhar o conteúdo do footer-bottom no topo */
+  .footer-bottom {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização e centralização dos links */
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilizar a parte footer-about */
+  .footer-about {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

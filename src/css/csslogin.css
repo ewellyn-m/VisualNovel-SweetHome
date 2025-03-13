@@ -1,0 +1,142 @@
+/* Estilo geral do modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Título do modal */
+.modal-content h1 {
+    margin-bottom: 20px;
+    color: #303030;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+/* Estilo dos inputs */
+.modal-content input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo do botão */
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background: #5e0b0b;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-content button:hover {
+    background: #811b1b;
+}
+
+/* Estilo do botão de fechar */
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+  
+}
+
+.modal-content .close:hover {
+    color: #811111;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+/* Estilo do link */
+.modal-content .link {
+    color: #811111;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.modal-content .link:hover {
+    color: #b42512;
+}
+
+/* Estilo do checkbox (transformando em bola) */
+.modal-content input[type="checkbox"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do checkbox */
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Torna o checkbox em forma de círculo */
+    background-color: #fff;
+    border: 2px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 10px; /* Espaçamento entre a bolinha e o texto */
+}
+
+/* Estilo quando o checkbox estiver marcado */
+.modal-content input[type="checkbox"]:checked {
+    background-color: #5e0b0b; /* Cor de fundo quando marcado */
+    border-color: #811b1b; /* Cor da borda quando marcado */
+}
+
+/* Efeito da bolinha interna quando marcado */
+.modal-content input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+/* Efeito do botão de hover */
+.modal-content input[type="checkbox"]:hover {
+    border-color: #5e0b0b;
+}
+
+/* Alinhamento do checkbox e do texto "Tenho mais de 12 anos" */
+.modal-content label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/episodios.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/png" href="../imagens/favicon.icon.webp">
+    <title>Sweet home</title> 
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagens/logobranca.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./historia.html">Historia</a>
+                </li>
+
+                <li>
+                    <a href="./personagem.html">Personagens</a>
+                </li>
+
+                <li>
+                    <a href="./episodios.html">Meus episodios</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menusaida">
+            <ul>
+                <li>
+                    <a href="/perfil.html">Perfil</a>
+                </li>
+                <li class="botaoDesliga">
+                    <a href="../../index.html"><span class="material-symbols-outlined">power_settings_new</span></a>
+                </li>
+            </ul>
+        </div>
+                
+    </header>
+
+    <main>
+       <div class="container">
+         
+        <section class="meusEpisodiosContainer">
+            <div class="containerBoxEpisodios">
+                <div class="titulo">
+                        <h1>Episodio</h1>
+                    </div>
+
+                    <div class="tituloResumo">
+                        <h2>resumo dos episodios</h2>
+                    </div>
+
+                    <div class="containerEpisodioBox">
+                        <div class="episodioBox">
+                            <div class="episodioImage">
+                                <img src="../cenarios/episodio1.png" alt="">
+                            </div>
+                            <div class="inforEpisode">
+                                <div class="tituloEpisode">
+                                    <h3><strong>Episodio 1-</strong>Onde tudo começou</h3>
+                                </div>
+                                <div class="descricaoEpisode">
+                                    <p>É hora de participar de um dos clubes da escola! E saber mais sobre o conflito entre Nathaniel e Castiel.</p>
+                                </div>
+                                <div class="botaoBoxEpisode">
+                                    <!--boato so vai poder ser clicado quando terminar o episodio anterior-->
+                                    <button id="botaoEpisodio1" onclick="desbloquearProximoEpisodio(this)">Continuar episodio</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episodioBox">
+                            <div class="episodioImage">
+                                <img src="../imagens/monstros.webp" alt="">
+                            </div>
+                            <div class="inforEpisode">
+                                <div class="tituloEpisode">
+                                    <h3><strong>Episodio 2-</strong>Quem é o cara do porão</h3>
+                                </div>
+                                <div class="descricaoEpisode">
+                                    <p>É hora de participar de um dos clubes da escola! E saber mais sobre o conflito entre Nathaniel e Castiel.</p>
+                                </div>
+                                <div class="botaoBoxEpisode">
+                                    <!--boato so vai poder ser clicado quando terminar o episodio anterior-->
+                                    <button id="botaoEpisodio2" class="hidden" disabled>Episódio Bloqueado</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+           
+       </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <p>&copy;2025| Sweet Home</strong></p>
+              </div>
+          
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Empresa</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Compatibilidade</a></li>
+              <li><a href="#">Creditos</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-about">
+            <p>Um jogo online por <strong>Meow</strong></p>
+          </div>
+      </footer>
+    
+    
+
+</body>
+</html>
